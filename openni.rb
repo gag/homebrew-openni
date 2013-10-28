@@ -21,6 +21,16 @@ class Openni < Formula
 
   option :universal
 
+  fails_with :clang do
+    build 500
+    cause 'openni only builds with gcc'
+  end
+
+  fails_with :llvm do
+    build 2336
+    cause 'openni only builds with gcc'
+  end
+
   def install
     ENV.universal_binary if build.universal?
 
