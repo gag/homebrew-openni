@@ -18,6 +18,13 @@ class SensorKinect < Formula
 
   option :universal
 
+  if MacOS.version >= :mavericks
+    fails_with :clang do
+      build 500
+      cause 'openni cannot build with clang'
+    end
+  end
+
   def install
     ENV.universal_binary if build.universal?
 
