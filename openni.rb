@@ -2,20 +2,21 @@ require 'formula'
 
 class Openni < Formula
   homepage 'http://www.openni.org/'
+  url 'https://github.com/gag/OpenNI/archive/master.zip'
+  version 'stable-1.5.2.23'
   # url 'https://github.com/OpenNI/OpenNI/archive/Stable-1.5.2.23.tar.gz'
   # version 'stable-1.5.2.23'
   # sha1 '1127cd9d82062b1a1ef68d25e39b4b65ac399c79'
-  head 'https://github.com/gag/OpenNI', :branch => 'unstable'
-  sha1 '4d7bac4d994ca95654c93b8b70eb2c5144359cfa'
+  #head 'https://github.com/gag/OpenNI', :branch => 'unstable'
+  #sha1 '4d7bac4d994ca95654c93b8b70eb2c5144359cfa'
 
   # head 'https://github.com/OpenNI/OpenNI.git'
 
-  # devel do
-    # head 'https://github.com/gag/OpenNI', :branch => 'unstable'
-    # url 'https://github.com/OpenNI/OpenNI/archive/Unstable-1.5.4.0.tar.gz'
-    # version 'unstable-1.5.4.0'
-    # sha1 '69eb24999b70c46e0befd5eff4a9c9a70d218f41'
-  # end
+  devel do
+    url 'https://github.com/gag/OpenNI/archive/unstable.zip'
+    version 'unstable-1.5.4.0'
+    #sha1 '69eb24999b70c46e0befd5eff4a9c9a70d218f41'
+  end
 
   depends_on :automake
   depends_on :libtool
