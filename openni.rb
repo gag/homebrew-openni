@@ -6,6 +6,7 @@ class Openni < Formula
   # version 'stable-1.5.2.23'
   # sha1 '1127cd9d82062b1a1ef68d25e39b4b65ac399c79'
   head 'https://github.com/gag/OpenNI', :branch => 'unstable'
+  sha1 '4d7bac4d994ca95654c93b8b70eb2c5144359cfa'
 
   # head 'https://github.com/OpenNI/OpenNI.git'
 
