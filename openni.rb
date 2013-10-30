@@ -2,7 +2,7 @@ require 'formula'
 
 class Openni < Formula
   homepage 'http://www.openni.org/'
-  url 'https://github.com/gag/OpenNI/archive/master.zip'
+  url 'https://github.com/gag/OpenNI/archive/master.tar.gz'
   version 'stable-1.5.2.23'
   # url 'https://github.com/OpenNI/OpenNI/archive/Stable-1.5.2.23.tar.gz'
   # version 'stable-1.5.2.23'
@@ -13,7 +13,7 @@ class Openni < Formula
   # head 'https://github.com/OpenNI/OpenNI.git'
 
   devel do
-    url 'https://github.com/gag/OpenNI/archive/unstable.zip'
+    url 'https://github.com/gag/OpenNI/archive/unstable.tar.gz'
     version 'unstable-1.5.4.0'
     #sha1 '69eb24999b70c46e0befd5eff4a9c9a70d218f41'
   end
